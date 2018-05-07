@@ -6,5 +6,11 @@ jQuery(document).ready(function($){
         $('.wrapper').fadeIn(200);
     });
 
+    $('#menuTab').easyResponsiveTabs({
+        type: 'vertical',
+        width: 'auto',
+        fit: true
+    });
+
 
 })
