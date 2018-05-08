@@ -171,7 +171,7 @@ a {
 #menuTab{
     z-index: 1;
     height: 100%;
-    background-color: #F0F8FF;
+    background-color: #f4f4f4;
 }
 .resp-tabs-list li{
     /* float: left; */
@@ -187,7 +187,7 @@ a {
     -moz-transition: all .6s ease-in;
     -o-transition: all .6s ease-in;
     transition: all .6s ease-in;
-    background: #F0F8FF;
+    background: #f4f4f4;
 }
 .resp-vtabs ul.resp-tabs-list {
     float: left;
@@ -225,11 +225,11 @@ a {
 } */
 .resp-vtabs li.resp-tab-active {
     border-right: none;
-    color: #F0F8FF;
+    color: #f4f4f4;
     position: relative;
     z-index: 1;
     padding: 17px !important;
-    background: #F0F8FF;
+    background: #f4f4f4;
 }
 .title-list{
     display: none;
@@ -268,7 +268,7 @@ a {
     ul.resp-tabs-list{
         display: none;
     }
-    /* .resp-vtabs .resp-tabs-container {
+    .resp-vtabs .resp-tabs-container {
         border: none;
         float: none;
         width: 100%;
@@ -277,10 +277,10 @@ a {
     }
     .resp-vtabs .resp-tabs-container {
         margin-left: 0 !important;
-    } */
+    }
 }
 
-/* @media screen and (min-width:850px) and (max-width: 1200px)  { 
+@media screen and (min-width:850px) and (max-width: 1200px)  { 
     .resp-vtabs .resp-tabs-container { 
         width:89%; 
     }
@@ -295,12 +295,12 @@ a {
     padding-left: 30px;
     border-bottom: 1px solid #e6e6e6;
 }
-.resp-tabs-container h1:not(.h-bloc) {
+/* .resp-tabs-container h1:not(.h-bloc) {
     background: none;
-}
+} */
 .resp-tabs-container {
     padding: 0;
-    background-color: #fff;
+    background-color: #f4f4f4;
     clear: left;
 }
 .resp-vtabs .resp-tabs-container {	
@@ -311,7 +311,7 @@ a {
     height: 580px;
     clear: none;
     margin-left: 13px;
-} */
+}
 
 
 

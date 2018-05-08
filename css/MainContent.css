@@ -1,0 +1,21 @@
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+.content-2{
+    height: 580px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.content-2 h1{
+    font-size: 25px;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #3B5998;
+    font-weight: initial;
+    margin-left: 15px;
+}
+.line{
+    margin-left: 10px;
+    border-bottom: 1px solid #B0C4DE;
+    width: 98%;
+}

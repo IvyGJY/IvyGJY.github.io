@@ -12,5 +12,9 @@ jQuery(document).ready(function($){
         fit: true
     });
 
+    function load_home() {
+        document.getElementById("tech").innerHTML = '<object type="text/html" data="TechBlog.html" width="100%" height="580px"></object>';
+          }
+
 
 })
