@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #preload {
     position: fixed;
     width: 100%;
@@ -282,7 +286,7 @@ a {
 
 @media screen and (min-width:850px) and (max-width: 1200px)  { 
     .resp-vtabs .resp-tabs-container { 
-        width:100%; 
+        width:89%; 
     }
 }
 .resp-tabs-container h1 {
@@ -307,7 +311,7 @@ a {
     padding: 0;
     background-color: #f4f4f4;
     float: left;
-    width: 100%;
+    width: 88%;
     height: 580px;
     clear: none;
     margin-left: 13px;
