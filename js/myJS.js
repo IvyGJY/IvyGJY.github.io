@@ -42,26 +42,8 @@ jQuery(document).ready(function($){
         return false;
     });
 
-    // 切换页面
-    // $(document).ready(function(){
-    //     $("#btn").click(function(){
-    //         $(".resp-tabs-container").load( "FanJourney.html");
-    //     });
-    // });
-
-    // function load_home() {
-    //     document.getElementById("btn").innerHTML = '<object type="text/html" data="TechBlog.html" width=100% height=580px ></object>';
-    //       }
     
-    // $('ul.resp-tabs-list li[class^=tab-]').click(function() {
-    //     var tab_name = $(this).attr('data-tab-name');
-    //     if(tab_name == "tech"){
-    //         $("#content-container").load( "TechBlog.html");
-    //     }
-    //     else{
-    //         $("#content-container").load( "FanJourney.html");
-    //     }
-    // });
+
    
 
 
@@ -70,6 +52,7 @@ jQuery(document).ready(function($){
 
 })
 
+// 切换页面
 function load_Tech() {
     document.getElementById("content-container").innerHTML = '<object type="text/html" data="TechBlog.html" width="100%" height="100%"></object>';
 }
