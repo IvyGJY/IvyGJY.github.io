@@ -13,11 +13,8 @@ jQuery(document).ready(function($){
     });
 
     // 设置点击菜单的按钮之后 页面弹出的效果
-    var animation_style = 'bounceIn';
-
-    $('.dropdown-select').change(function() {
-        animation_style = $('.dropdown-select').val();
-    });
+    // var animation_style = 'bounceIn';
+    var animation_style = 'fadeInLeft';
 
     $('ul.resp-tabs-list li[class^=tab-]').click(function() {
 
@@ -39,14 +36,43 @@ jQuery(document).ready(function($){
             }
         });
 
-        if (tab_name == "FanJour")
+        if (tab_name == "fan")
             initialize();
 
         return false;
     });
+
+    // 切换页面
+    // $(document).ready(function(){
+    //     $("#btn").click(function(){
+    //         $(".resp-tabs-container").load( "FanJourney.html");
+    //     });
+    // });
+
+    // function load_home() {
+    //     document.getElementById("btn").innerHTML = '<object type="text/html" data="TechBlog.html" width=100% height=580px ></object>';
+    //       }
+    
+    // $('ul.resp-tabs-list li[class^=tab-]').click(function() {
+    //     var tab_name = $(this).attr('data-tab-name');
+    //     if(tab_name == "tech"){
+    //         $("#content-container").load( "TechBlog.html");
+    //     }
+    //     else{
+    //         $("#content-container").load( "FanJourney.html");
+    //     }
+    // });
+   
 
 
 
 
 
 })
+
+function load_Tech() {
+    document.getElementById("content-container").innerHTML = '<object type="text/html" data="TechBlog.html" width="100%" height="100%"></object>';
+}
+function load_Fan() {
+    document.getElementById("content-container").innerHTML = '<object type="text/html" data="FanJourney.html" width="100%" height="100%"></object>';
+}
