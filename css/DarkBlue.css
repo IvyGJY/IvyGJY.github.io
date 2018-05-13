@@ -210,10 +210,10 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 #profile_social a{
     background-color: #3B5998;
 }
-#blog .post_media {
+#techBlog .post_media {
     border-top: 5px solid #3B5998;
 }
-#blog .post_media  .post-format-icon {
+#techBlog .post_media  .post-format-icon {
     background: #3B5998;
 }
 .reference span {
