@@ -25,8 +25,8 @@ jQuery(document).ready(function($){
             $('.resp-tabs-container').removeClass('animated ' + animation_style);
         });
 
-        $(".content_2").mCustomScrollbar("destroy");
-        $(".content_2").mCustomScrollbar({
+        $(".content-2").mCustomScrollbar("destroy");
+        $(".content-2").mCustomScrollbar({
             theme: "dark-2",
             contentTouchScroll: true,
             advanced: {
@@ -42,7 +42,96 @@ jQuery(document).ready(function($){
         return false;
     });
 
-    
+    //切换中间的界面（点击 Read More 之后）
+    function redimensionnement() {
+
+        if (window.matchMedia("(max-width: 800px)").matches) {
+            $(".content-2").mCustomScrollbar("destroy");
+            $(".resp-vtabs .resp-tabs-container").css("height", "100%");
+            $(".content-2").css("height", "100%");
+        } else {
+
+            $(".resp-vtabs .resp-tabs-container").css("height", "580px");
+            $(".content-2").css("height", "580px");
+            $(".content-2").mCustomScrollbar("destroy");
+            $(".content-2").mCustomScrollbar({
+                theme: "dark-2",
+                contentTouchScroll: true,
+                advanced: {
+                    updateOnContentResize: true,
+                    updateOnBrowserResize: true,
+                    autoScrollOnFocus: false
+                }
+            });
+
+        }
+
+    }
+
+    window.addEventListener('load', redimensionnement, false);
+    window.addEventListener('resize', redimensionnement, false);
+
+    // Fantastic Journey
+    $('a.read_m').click(function(){
+        var pagina = $(this).attr('href');
+        var postdeatil = pagina + '-page';
+        if (pagina.indexOf('#post-') != -1){
+            $('#blog-page').hide();
+
+            $(postdetail).show();
+            $(".tab-FanJour").trigger('click');
+        }
+        return false;
+    });
+    $('a.read_more').click(function() {
+        var pagina = $(this).attr('href');
+        var postdetail = pagina + '-page';
+
+        if (pagina.indexOf("#post-") != -1) {
+
+            $('#blog-page').hide();
+
+            $(postdetail).show();
+            $(".tab-FanJour").trigger('click');
+        }
+        return false;
+    });
+
+    //pagination All
+    $('.content-post a').click(function() {
+        var pagina = $(this).attr('href');
+
+        if (pagina == "#fanJour") {
+
+            $('.content-post').hide();
+            $('#blog-page').show();
+            $(".tab-FanJour").trigger('click');
+
+        }
+
+        return false;
+
+    });
+
+    //pagination blog
+    $('.content-post #pagination').click(function() {
+
+
+        var pagina = $(this).attr('href');
+        var postdetail = pagina + '-page';
+
+        if (pagina.indexOf("#post-") != -1) {
+
+            $('#blog-page').hide();
+            $('.content-post').hide();
+
+            $(postdetail).show();
+            $(".tab-FanJour").trigger('click');
+        }
+
+        return false;
+
+    });
 
    
 

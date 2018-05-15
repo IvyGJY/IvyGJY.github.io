@@ -1,6 +1,12 @@
 body{
     font-family: 'Microsoft YaHei', sans-serif;
+    color: #3B5998;
 }
+
+.clear{
+    clear: both;
+}
+
 .content-2{
     height: 580px;
     box-sizing: border-box;
@@ -21,6 +27,7 @@ body{
 }
 
 /* Article */
+/* Photo */
 .blog-article{
     padding-top: 37px;
     padding-bottom: 35px;
@@ -45,7 +52,7 @@ body{
     padding-top: 0;
 }
 
-#techBlog .post_med a.item-date {
+#fanJour .post_med a.item-date {
     left: 0;
     width: 55px;
     height: 55px;
@@ -82,7 +89,7 @@ body{
     transform-origin: 35% 69%;
 }
 
-#techBlog .post_media  .post-format-icon {
+#fanJour .post_media  .post-format-icon {
     display: block;
     line-height: 26px;
     width: 55px;
@@ -105,7 +112,7 @@ body{
     -o-transform-origin: 0 100%;
     transform-origin: 0 100%;
 }
-#techBlog .post_med .post-format-icon:before {
+#fanJour .post_med .post-format-icon:before {
     width: 55px;
     height: 55px;
     text-align: center;
@@ -142,6 +149,158 @@ body{
 .media .img-hover {
      width: 100% !important;
 }
+
+/* Title */
+.title_content{
+    display: inline-block;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #DDD;
+}
+.title_content:after{
+    height: 1px;
+    display: block;
+    left: 0;
+    content: " ";
+    position: relative;
+    width: 35px;
+    top: 1px;
+}
+.text_content{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    padding-top: 2px;
+    margin-bottom: 5px;
+}
+.text_content a:hover{
+    text-decoration:none;
+}
+
+/* Time & Author of the article */
+.blog-article .info{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    margin-top: 2px;
+    list-style: none;
+}
+.blog-article .info li{
+    padding-left: 7px;
+    padding-right: 7px;
+    border-left: 1px solid #999;
+    color: #585858;
+    float: left;
+    line-height: 13px;
+    font-size: 12px;
+}
+.info_cover{
+    float:right;
+    /* margin-right: 3px; */
+}
+/* 设置文章相关信息的第一个的左边边界不显示 */
+.blog-article .info li:first-child{
+    border-left: none;
+    padding-left: 0;
+}
+
+.blog-content{
+    text-indent: 2em;
+    float: left;
+    width: 100%;
+    margin-top: 18px;
+}
+.blog-content p{
+    margin-bottom: 0;
+}
+.blog-article .blog-content p:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+.blog-article .blog-content p:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.blog-article a.read_m {
+    position: relative;
+    float: left;
+    padding-right: 5px;
+    display: inline-block;
+    width: 150px;
+    padding: 5px 2px;
+    text-decoration: none;
+    text-align: center;
+}
+.blog-article a.read_m:hover{
+    text-decoration:none;
+    background: #FFF;
+    border: none;
+    font-style: italic;
+}
+.post-page-format{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+ul.info-post li:first-child {
+    margin-left: 0px;
+}
+ul.info-post li:last-child {
+    margin-right: 15px;
+}
+ul.info-post li {
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+}
+a.readmore{
+    margin: 0 0 0 5px;
+    padding: 7px 10px 8px 10px;
+    font-size: 0.9em;
+    float: right;
+}
+a.readmore:hover, a.readmore:focus, a.readmore:active {
+    text-decoration: none;
+}
+a.readmore.disabled {
+    cursor: default;
+    background-color: #FFF!important;
+    color: #999!important;
+    border: 1px solid #999!important;
+}
+a.readmore:visited, a.readmore {
+    border: 1px solid #dadada;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #dadada;
+    margin-bottom: 10px
+}
+a.readmore:hover, a.readmore:focus, a.readmore:active {
+    color: #FFF;
+    transition-property: border;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+
+
+
+
 @media screen and (max-width: 320px) {
     ul.about li {
         font-size: 11px;
@@ -154,7 +313,7 @@ body{
         font-size: 12px;
     }
 
-    #techBlog .text_content {
+    #fanJour .text_content {
         font-size: 10px;
     }
     .blog-article .media,
@@ -187,10 +346,40 @@ body{
         text-align: center;
         width: 100%;
     }
-    .contact-info,
+    /* .contact-info,
     #contactform .reset, 
     #comment_form .reset,
     section.button-demo {
         width: 100%;
+    } */
+}
+
+@media screen and (max-width: 384px) {
+    a.readmore:visited, a.readmore{
+        font-size: 13px;
     }
 }
+
+@media screen and (max-width: 554px) {
+    .blog-article .info li:first-child {
+        border-left: none;
+        float:none;
+    }
+    .blog-article .info li {
+        padding-top: 7px;
+        border-left: none;
+        padding-left: 0px;
+        float:none;
+    }
+    .blog-article .media {
+        height: 205px;
+    }
+    .blog-article a.read_m { 
+        width: 100%; 
+    }
+    ul.info-post li {
+        float:none;
+        margin-left: 0;
+    }
+}
+
