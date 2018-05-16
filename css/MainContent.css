@@ -346,12 +346,6 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
         text-align: center;
         width: 100%;
     }
-    /* .contact-info,
-    #contactform .reset, 
-    #comment_form .reset,
-    section.button-demo {
-        width: 100%;
-    } */
 }
 
 @media screen and (max-width: 384px) {
