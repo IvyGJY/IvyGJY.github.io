@@ -429,6 +429,10 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 }
 
 @media screen and (max-width: 554px) {
+    .resp-tabs-container h1 {
+        font-size: 15px;
+    }
+
     .blog-article .info li:first-child {
         border-left: none;
         float:none;
@@ -442,6 +446,11 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
     .blog-article .media {
         height: 205px;
     }
+
+    .media iframe {
+        height: 205px;
+    }
+
     .blog-article a.read_m { 
         width: 100%; 
     }

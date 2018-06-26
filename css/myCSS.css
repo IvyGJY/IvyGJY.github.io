@@ -320,12 +320,6 @@ a {
     }
 }
 
-@media screen and (min-width:850px) and (max-width: 1200px)  { 
-    .resp-vtabs .resp-tabs-container { 
-        width:89%; 
-    }
-}
-
 @media only screen and (max-width: 767px) {
 
     /* #portfoliolist .portfolio {
@@ -340,6 +334,37 @@ a {
     }
 
 }
+
+/* #Clearing */
+/* Self Clearing */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+.row:after,
+.clearfix:after {
+    clear: both; }
+.row,
+.clearfix {
+    zoom: 1; }
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 @media only screen and (min-width: 1200px) {
 
     .widget-profile #profile_social a{ 
@@ -426,6 +451,73 @@ a {
         display: none;
     }
 }
+
+@media only screen and (min-width : 800px) and (max-width : 991px) {
+
+    .widget-profile{ 	
+        height: 210px !important;	
+        margin-bottom: 20px;
+        float: none;
+    }
+
+    #profile_social {
+        display: none;
+    }
+    #profile_desc {
+        border-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 240px) {
+
+    ul.about li {
+        padding-left: 2px;
+        font-size: 9px;
+    }
+
+    /* #profile .about i.glyphicon {
+        margin-right: 0;
+    } */
+
+    p {
+        font-size: 12px;
+    }
+    
+    .text_content {
+        font-size: 13px;
+    }
+    .resp-tabs-container h1 {
+        font-size: 11px;
+    }
+
+    h5, .h5 {
+        font-size: 9px !important;
+    }
+
+}
+
+@media screen and (min-width:850px) and (max-width: 1200px)  { 
+    .resp-vtabs .resp-tabs-container { 
+        width:89%; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    ul.about li span.value {
+        width: 196px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
