@@ -94,7 +94,7 @@ body{
     line-height: 26px;
     width: 55px;
     height: 55px;
-    position: absolute;
+    position: relative;
     top: -29px;
     left: 50%;
     z-index: 9;
@@ -331,7 +331,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
     line-height: 26px;
     width: 55px;
     height: 55px;
-    position: absolute;
+    position: relative;
     top: -29px;
     left: 50%;
     z-index: 9;

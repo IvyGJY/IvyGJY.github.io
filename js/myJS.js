@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
         $('.wrapper').fadeIn(200);
     });
 
+    //easyResponsiveTabs 的控制
     $('#menuTab').easyResponsiveTabs({
         type: 'vertical',
         width: 'auto',
@@ -47,7 +48,10 @@ jQuery(document).ready(function($){
 // 切换页面
 function load_Tech() {
     document.getElementById("content-container").innerHTML = '<object type="text/html" data="TechBlog.html" width="100%" height="100%"></object>';
+
+
 }
 function load_Fan() {
     document.getElementById("content-container").innerHTML = '<object type="text/html" data="FanJourney.html" width="100%" height="100%"></object>';
+
 }

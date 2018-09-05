@@ -221,7 +221,7 @@ a {
     border-bottom: none;
 }
 
-/* .resp-vtabs .resp-tabs-container {	
+.resp-vtabs .resp-tabs-container {	
     padding: 0;
     background-color: #f4f4f4;
     float: left;
@@ -229,10 +229,10 @@ a {
     height: 580px;
     clear: none;
     margin-left: 13px;
-} */
-/* .resp-vtabs .resp-tab-content {
+}
+.resp-vtabs .resp-tab-content {
     border: none;
-} */
+}
 .resp-vtabs li.resp-tab-active {
     border-right: none;
     color: #f4f4f4;
@@ -301,6 +301,59 @@ a {
     clear: none;
     margin-left: 13px;
 }
+
+
+/* 小屏幕下菜单样式 */
+/* h2.resp-accordion {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.32em 0em 0.32em 0.70em;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    background: #303030; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 0px;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+h2.resp-accordion {
+    font-size: 17px;
+    margin: 0;
+    padding: 10px 15px;
+}
+h2.resp-tab-active {
+    border-bottom: 1px solid #ccc !important;
+    margin-bottom: 0 !important;
+    padding: 10px 15px !important;
+}
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #ccc !important;
+    background: blue;
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+}
+.resp-jfit {
+    width: 100%;
+    margin: 0;
+}
+.resp-tab-content-active {
+    display: block;
+}
+h2.resp-accordion:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+} */
 
 
 /* 设置 如何屏幕宽度小于800px的时候，不显示左边的菜单列表 */
@@ -870,17 +923,3 @@ h2.resp-accordion:hover {
 
 
 
-
-
-
-.foot {
-    width:100%;
-    height:125px;
-    line-height:200px;
-    text-align:center;
-    font-size:16px;
-    color:#696969;
-    background:#DCDCDC;
-    /* margin-top:-100px; */
-
-}
